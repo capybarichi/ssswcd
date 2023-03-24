@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Новости</title>
+    <link rel="icon" href="images/logo.png">
+
+    <!-- стили подключены здесь -->
+    <link rel="stylesheet" type="text/css" href="./styles/ssscwd-style.css">
+
+    <!-- скрипты подключены здесь -->
+    <script type="text/javascript" src="scripts/ssscwd.js"></script>
+</head>
+<body>
+    <header>
+    <nav class="container">
+        <img class="logo" src="images/logo.png">
+      </a>
+      <div class="nav-toggle"><span></span></div>
+      
+      <ul id="menu">
+        <li><a href="./ssscwd.html">Главная</a></li>
+        <li><a href="./news.html">Новости</a></li>
+        <li><a href="./map.html">Карта</a></li>
+        <li><a href="./authors.html">Об авторах</a></li>
+        <li><a href="./auth-and-reg.html">Вход</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- так встяавляются карты на сайт. это пример -->
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14473.215367379922!2d38.91761175263859!3d47.20356078110071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3fd3c8f85eddf%3A0x5690682bf9db5ebf!2z0J7QsdGJ0LXQttC40YLQuNC1IOKEliAz!5e0!3m2!1sru!2sru!4v1676744714486!5m2!1sru!2sru" width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  
+    </div> <!-- конец div class="container"-->
+    <footer>
+        <div class="container">
+            <div class="footer-col"><span>Мой блог © 2016</span></div>
+            <div class="footer-col">
+                <div class="social-bar-wrap">
+                    <a title="Facebook" href="" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a title="Twitter" href="" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a title="Pinterest" href="" target="_blank"><i class="fa fa-pinterest"></i></a>
+                    <a title="Instagram" href="" target="_blank"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <a href="mailto:admin@yoursite.ru">Написать письмо</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $('.nav-toggle').on('click', function(){
+          $('#menu').toggleClass('active');
+        });
+        </script>
+
+</body>
+
+</html>

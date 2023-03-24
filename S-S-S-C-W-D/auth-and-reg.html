@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>  
+    <meta charset="UTF-8" />
+
+    <title>Сервис для упрощения раздельного сбора отходов и их утилизации</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png">
+    <link rel="stylesheet" type="text/css" href="styles/demo.css" />
+    <link rel="stylesheet" type="text/css" href="styles/style-auth-and-reg.css" />
+    <link rel="stylesheet" type="text/css" href="styles/animate-custom.css" />
+    <script type="text/javascript" src="scripts/auth-and-reg.js"></script>
+</head>
+
+<body>
+    <!-- Блоки регистрации и атовризации пользователя -->
+    <div class="container">
+        <section>
+            <div id="container_demo">
+                <a class="hiddenanchor" id="toregister"></a>
+                <a class="hiddenanchor" id="tologin"></a>
+                <div id="wrapper">
+                    <!-- Блок авторизации пользователя -->
+                    <div id="login" class="animate form">
+                        <form action="authorizationUser()" autocomplete="on">
+                            <h1>Авторизация</h1>
+                            <p>
+                                <label for="username" class="uname" data-icon="u"> Ваш email или логин </label>
+                                <input id="username" name="username" required="required" type="text"
+                                    placeholder=" логин или почта " />
+                            </p>
+                            <p>
+                                <label for="password" class="youpasswd" data-icon="p"> Ваш пароль </label>
+                                <input id="password" name="password" required="required" type="password"
+                                    placeholder="X8df!90EO" />
+                            </p>
+                            <p class="keeplogin">
+                                <input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" />
+                                <label for="loginkeeping">Запомнить меня при входе</label>
+                            </p>
+                            <p class="login button">
+                                <input type="submit" value="Вход" />
+                            </p>
+                            <p class="change_link">
+                                Ещё не с нами ?
+                                <a href="#toregister" class="to_register">Присоединиться</a>
+                            </p>
+                        </form>
+                    </div>
+                    <!-- Блок регистрации пользователя -->
+                    <div id="register" class="animate form">
+                        <form action="reg()" autocomplete="on">
+                            <h1> Регистрация </h1>
+                            <p>
+                                <label for="usernamesignup" class="uname" data-icon="u">Ваш логин</label>
+                                <input id="usernamesignup" name="usernamesignup" required="required" type="text"
+                                    placeholder="мойсуперлогин690" />
+                            </p>
+                            <p>
+                                <label for="emailsignup" class="youmail" data-icon="e"> Ваш email</label>
+                                <input id="emailsignup" name="emailsignup" required="required" type="email"
+                                    placeholder="мойсуперmail@mail.com" />
+                            </p>
+                            <p>
+                                <label for="passwordsignup" class="youpasswd" data-icon="p">Ваш пароль </label>
+                                <input id="passwordsignup" name="passwordsignup" required="required" type="password"
+                                    placeholder="X8df!90EO" />
+                            </p>
+                            <p>
+                                <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Подтвердите ваш
+                                    пароль </label>
+                                <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required"
+                                    type="password" placeholder="X8df!90EO" />
+                            </p>
+                            <p class="signin button">
+                                <input type="submit" onclick="registerUser()" value="Зарегистрироваться" />
+                            </p>
+                            <p class="change_link">
+                                Уже с нами ?
+                                <a href="#tologin" class="to_register"> Вернуться и войти </a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
